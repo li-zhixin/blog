@@ -3,6 +3,11 @@ locale: zh-CN
 title: 云栈开发手记
 theme: ["PaperMod"]
 
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
 outputs:
   home:
     - HTML
@@ -20,6 +25,8 @@ params:
       - permalink
       - summary
       - content
+  footer:
+    text: <a href="https://beian.miit.gov.cn/" target="_blank">陕ICP备2026018249号</a>
 
 menu:
   main:
