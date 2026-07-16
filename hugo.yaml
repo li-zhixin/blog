@@ -1,0 +1,29 @@
+baseURL: https://lizhixin.top/
+locale: zh-CN
+title: 云栈开发手记
+theme: ["PaperMod"]
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+params:
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    threshold: 0.4
+    minMatchCharLength: 1
+    keys:
+      - title
+      - permalink
+      - summary
+      - content
+
+menu:
+  main:
+    - identifier: search
+      name: 搜索
+      url: /search/
+      weight: 10
