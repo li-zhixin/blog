@@ -27,7 +27,7 @@ description: 通过 Docker 与 Podman 对照实验及 Podman 5.8.2 源码，分�
   -> remove network
 ```
 
-这些操作都由 Testcontainers 通过 Docker 兼容 API 完成，后端运行时分别是 Docker 或 Podman。多个 worker 的 teardown 会让 stop、remove、network remove 与容器状态查询交错执行，这正是本次调查关注的并发场景。
+这些操作都由 Testcontainers 通过连接 podman Docker 兼容 API 完成， worker 的 teardown 会让 stop、remove、network remove 与容器状态查询交错执行，这正是本次调查关注的并发场景。
 
 ## 实验条件
 
